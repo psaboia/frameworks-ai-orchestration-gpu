@@ -7,7 +7,13 @@ dependencies:
   - dvc # Install dvc for managing data and experiments
   - dvclive # Install dvclive for live metrics
   - langchain
+  - nbdev
 #   - pip  # if you need more packages installed from pip 
   - pip:
+    - ipywidgets
+    - transformers 
     - llama-index
     - python-dotenv
+    - torch
+    - torchvision
+    - torchaudio 
