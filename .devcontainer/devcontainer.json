@@ -23,7 +23,7 @@
 	"forwardPorts": [8888],
 
 	// Use 'postCreateCommand' to run commands after the container is created. Comment if using jupyter lab.
-	"postCreateCommand": "conda init",
+	"postCreateCommand": "conda init zsh",
 
 	// Configure tool-specific properties.
 	"customizations": {
