@@ -3,17 +3,19 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - ipykernel # required for jupyter notebook in VS Code
-  - dvc # Install dvc for managing data and experiments
-  - dvclive # Install dvclive for live metrics
+  - ipykernel  # required for jupyter notebook in VS Code
+  - dvc        # Install dvc for managing data and experiments
+  - dvclive    # Install dvclive for live metrics
+  - nbdev      # Install nbdev for developing libraries in Jupyter Notebooks
   - langchain
-  - nbdev
+ 
 #   - pip  # if you need more packages installed from pip 
   - pip:
     - ipywidgets
-    - transformers 
     - llama-index
     - python-dotenv
     - torch
     - torchvision
     - torchaudio 
+    - transformers  # Install transformers for loading models from Hugging Face
+    - datasets      # Install datasets for loading datasets from Hugging Face
