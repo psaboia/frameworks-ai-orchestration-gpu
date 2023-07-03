@@ -14,7 +14,10 @@
         "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
 			"version": "latest"
 		}
-    },
+    	},
+
+	// To use CUDA (GPU) inside the container. Comment if you don't have access to gpu.
+	"runArgs": ["--gpus","all"],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [8888],
