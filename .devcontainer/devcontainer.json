@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/miniconda
 {
-	"name": "Miniconda demo",
+	"name": "Miniconda demo with gpu",
 	"build": { 
 		"context": "..",
 		"dockerfile": "Dockerfile",
@@ -10,8 +10,8 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-        // Instsall Quarto CLI for nbdev
-        "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+		// Install Quarto CLI for nbdev
+		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
 			"version": "latest"
 		}
     	},
@@ -35,25 +35,20 @@
 				"ms-python.python",
 				"donjayamanne.python-extension-pack",
 				"ms-toolsai.jupyter",
-				"GitHub.codespaces",
-				"ms-azuretools.vscode-docker",
-				"DavidAnson.vscode-markdownlint",
-				"streetsidesoftware.code-spell-checker",
-				"iterative.dvc",
 				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"iterative.dvc",				
 				"hamelhusain.nbdev",
 				"GitHub.copilot-nightly",
 				"GitHub.copilot-chat",
-				"ms-toolsai.vscode-jupyter-slideshow"
+				"GitHub.codespaces",
+				"ms-azuretools.vscode-docker",
+				"DavidAnson.vscode-markdownlint",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	}
-	// Use 'postCreateCommand' to run commands after the container is created. Comment if using jupyter lab.
-	// "postCreateCommand": "conda init"
-
-	// Uncomment to enable jupyter lab
-	// "postCreateCommand": ["conda init", "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''"]
-
+	
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
