@@ -19,5 +19,5 @@ dependencies:
     - torchvision
     - torchaudio
     - huggingface_hub # huggingface_hub
-   # - transformers    # Install transformers for loading models from Hugging Face
-   # - datasets        # Install datasets for loading datasets from Hugging Face
+    - transformers    # Install transformers for loading models from Hugging Face
+    - datasets        # Install datasets for loading datasets from Hugging Face
